@@ -19,17 +19,16 @@ body{
     flex-direction: row;
 }
 .header__title {
+    display: flex-start;
     font-size: 1.25rem;
     padding-left: 1.25rem;
-    margin-right: 1rem;
-    
+    margin-right: 1rem;   
 }
 .header__Search {
     display: flex-end;
     font-size: 1.2rem;
     margin-left: auto;
     padding-right: 1rem;
-
 }
 .search__input {
     padding: 0.375rem 0.75rem;
@@ -42,7 +41,12 @@ body{
     border-color: rgb(128, 189,255);
 }
 .search__btn {
-
+    background-color: brown;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0.375rem, 0.75.rem;
+    font-size: 1.2rem;
+    color: rgb(236,236,236);
 }
 main {
     display: flex;
@@ -52,7 +56,7 @@ main {
 }
 aside {
     background-color: rgb(33, 37, 41);
-    color: rgb(236,236,236,);
+    color: rgb(236,236,236);
     min-width: 12rem;
 }
 .main__nav {
@@ -63,22 +67,45 @@ aside {
 
 }
 .nav__ul li {
+    padding: 1rem;
 
+}
+a {
+    text-decoration: none;
+    color: rgb(236,236,236);
 }
 .cím {
     text-transform: uppercase;
+    color: darkgrey;
+    
 
 }
 section {
-
+    width: 100%;
+}
+section h1 {
+    margin: 2rem;
+    color: dimgrey;
 }
 .main__breadcrumb {
-    background-color: rgb(233, 236, 239,);
+    background-color: rgb(233, 236, 239);
     border-radius: .25rem;
     padding: 1rem 1.5rem 1rem 1.5rem;
+    margin: 2rem;
+    color: dimgray;
 }
 .main__cards {
-
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 2rem;        
+}
+.main__card {
+    flex-basis: 100%;
+    border-radius: .25rem;
+    color: rgb(236,236,236);
+    margin: 0.5rem;
+    padding: 1.25rem 1.50rem;
 }
 .main__card--blue {
     background-color: rgb(0, 123, 255);
@@ -93,10 +120,20 @@ section {
     background-color: rgb(220, 53, 69);
 }
 .card__top {
-    border-radius: 0.25rem 0.25rem 0rem 0rem;
-    transition: all 3s;
+    border-radius: 0.25rem, 0.25rem, 0rem, 0rem;
+    transition: background-color .3s;
+    padding: 1.5rem, 1rem, 1.5rem, 1 rem;
+    font-size: 1.2rem;
 }
 .card__bottom {
-    border-radius: 0rem 0rem 0.25rem 0.25rem;
-    transition: all .3s;
+    transition: background-color .3s;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    font-size: 1rem;
+    border-top: solid 2px rgb(0,0,0,0.1);
+    display: flex;
+}
+.card__bottom .fa {
+    margin-left: auto;
+
 }
