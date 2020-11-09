@@ -1,0 +1,102 @@
+
+html{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.header--dark {
+    background-color: rgb(51, 57, 64);
+    color: rgb(236,236,236);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.header__title {
+    font-size: 1.25rem;
+    padding-left: 1.25rem;
+    margin-right: 1rem;
+    
+}
+.header__Search {
+    display: flex-end;
+    font-size: 1.2rem;
+    margin-left: auto;
+    padding-right: 1rem;
+
+}
+.search__input {
+    padding: 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: border-color .15s;
+}
+.search__input:focus {
+    border-color: rgb(128, 189,255);
+}
+.search__btn {
+
+}
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+}
+aside {
+    background-color: rgb(33, 37, 41);
+    color: rgb(236,236,236,);
+    min-width: 12rem;
+}
+.main__nav {
+
+}
+.nav__ul {
+    list-style-type: none;
+
+}
+.nav__ul li {
+
+}
+.cím {
+    text-transform: uppercase;
+
+}
+section {
+
+}
+.main__breadcrumb {
+    background-color: rgb(233, 236, 239,);
+    border-radius: .25rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+.main__cards {
+
+}
+.main__card--blue {
+    background-color: rgb(0, 123, 255);
+}
+.main__card--yellow {
+    background-color: rgb(255, 193, 7);
+}
+.main__card--green {
+    background-color: rgb(40, 167, 69);
+}
+.main__card--red {
+    background-color: rgb(220, 53, 69);
+}
+.card__top {
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+    transition: all 3s;
+}
+.card__bottom {
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+    transition: all .3s;
+}
